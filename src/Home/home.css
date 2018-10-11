@@ -4,19 +4,37 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
+    background-image: url(../../images/fondoHome.jpg);
+    background-size:cover; 
+    padding: 30px;
 }
 
+.home-container .home-logo figure{
+    margin: 10px 0;
+    padding: 0;
+}
+.home-container .home-logo figure img{
+    width: 220px;
+    height: 220px;
+    border-radius:50%; 
+}
 .home-container .home-name p,h1{
     margin: 0;
+    color: white;
 }
 
 .home-container .home-redes ul{
-    margin: 0;
+    margin: 10px 0 10px 0;
     padding: 0;
     list-style: none;
     display: flex;
 }
 
-.home-container .home-redes ul li a{
+.home-container .home-redes{
     margin: 0 20px;
+    color:white;
+}
+
+.home-container .home-redes span{
+    padding: 10px;
 }

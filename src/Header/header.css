@@ -14,10 +14,20 @@ body{
     position: fixed;
     top: 0;
 }
-.header .logo{
-    padding-left: 25px;
-}
 
+.header .button-menu{
+    display: none;
+    position: absolute;
+    left: 30px;
+}
+.header .logo{
+    display: flex;  
+}
+.header .logo img{
+    width: 150px;
+    height: 50px;
+    /* display: flex; */
+}
 .header .menu ul{
     margin: 0;
     padding: 0;
@@ -28,7 +38,6 @@ body{
 }
 
 .header ul li a{
-    display: block;
     padding: 5px 10px;
     cursor: pointer;
     line-height: 55px;;
@@ -45,7 +54,7 @@ body{
 .container{
     width: 100%;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0 auto;
     box-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
@@ -56,9 +65,45 @@ body{
     }
 
 }
-@media screen and (max-width: 480px) {
-    .menu{
+@media screen and (max-width: 480px) {    
+    .header .button-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 5px;
+        background: red;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        z-index: 3;
+    }
+    .header .logo {
+        margin: 0 auto;
+    }
+    .header .menu{
         background: yellowgreen;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        /* bottom: 0; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+    }
+
+    
+    .header .menu ul li{
+        display: block;
+        text-align: center;
+    }
+
+    .header .is-active{
+        left: 0;
     }
  }
 @media screen and (max-width: 767px) { 
@@ -66,17 +111,7 @@ body{
         padding: 0;
     }
     .header{
-        display:block;
-        height: auto;
-        position: initial;
-    }
-    .header .logo{
-        text-align: center;
-        padding-left: 0;
-    }
-    .header .menu ul li{
-        display: initial;
-        text-align: center;
+        position: initial; 
     }
 }
 /* @media screen and (max-width: 1024px) { 

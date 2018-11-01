@@ -45,10 +45,12 @@ const webpackInitConfig = {
         test: /\.(png|jpg|gif)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: 'url-loader',
             options: {
               // outputPath: 'images/',
               // publicPath: 'images/',
+              limit: 10000,
+              fallback: 'file-loader',
               name: 'images/[name].[ext]',
             },
           },

@@ -1,0 +1,6 @@
+----------Mejorar el tiempo de carga de la web-----------------
+
+1.Archivos css poner los antes de la sentencia de los script
+2.Fuentes y contenido extra ponerlo detras del archivo css.
+3.Convertir mi archivo css a Critical CSS y poner un style dentro de la etiqueta head y colocar
+    el codigo convertido

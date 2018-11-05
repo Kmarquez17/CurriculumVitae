@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
-import logo from '../../images/fotoPerfil.jpg'
+import logo from '../../images/fotoPerfil.png'
 import FontAwesome from 'react-fontawesome'
 
 import './home.css'
-import { runInThisContext } from 'vm';
 class Home extends Component {
     
     render() {
         return (
-            <div name="home" className="container">
+            <div className="container" name="home">
                 <div className="home-container">
                     <div className="home-logo">
                         <figure>

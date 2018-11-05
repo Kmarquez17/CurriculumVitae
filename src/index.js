@@ -4,9 +4,4 @@ import App from './App';
 
 const container = document.getElementById('container')
 
-ReactDOM.render(
-    // <App />
-        <App />
-    , 
-    container
-);
+ReactDOM.render(<App />, container);

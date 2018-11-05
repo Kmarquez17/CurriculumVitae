@@ -13,42 +13,58 @@ body{
     box-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
+    background-color:#17A589;
+    color: white;
 }
 
 .header .button-menu{
     display: none;
     position: absolute;
     left: 30px;
+    cursor: pointer;
 }
+
 .header .logo{
     display: flex;  
+    font-family: 'Hammersmith One', cursive;
+    font-weight: 700;
+    font-size: 35px;
+    padding-left: 10px;
 }
-.header .logo img{
-    width: 150px;
-    height: 50px;
-    /* display: flex; */
+
+.header .logo p{
+   margin: auto;
 }
+
 .header .menu ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 .header ul li{
     display: inline-block;
+    padding: 0 5px;
 }
 
 .header ul li a{
     padding: 5px 10px;
     cursor: pointer;
-    line-height: 55px;;
+    line-height: 55px;
+    font-size: 15px;
+}
+
+.header ul li a .header-icon{
+    margin: 0;
+    padding-right: 10px;
 }
 
 .header ul li a:hover{
-    border-bottom: 5px solid #7c4dff;
+    color:black;
 }
 
 .header ul li a.active{
-    border-bottom: 5px solid #7c4dff;
+    border-bottom: 4px solid black;
 }
 
 .container{
@@ -56,8 +72,8 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     box-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
 }
-
 
 @media screen and (max-width: 320px) { 
     .menu{
@@ -65,7 +81,11 @@ body{
     }
 
 }
-@media screen and (max-width: 480px) {    
+@media screen and (max-width: 480px) {
+    /* body{
+        overflow-y: hidden;
+     } */
+
     .header .button-menu{
         display: flex;
         justify-content: center;
@@ -74,13 +94,19 @@ body{
         left: 5px;
         background: red;
         border-radius: 50%;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         z-index: 3;
+    }
+    .header .button-menu .button-menu-icon{
+        font-size: 20px;
     }
     .header .logo {
         margin: 0 auto;
     }
+    .header .logo p{
+        font-size: 25px;;
+     }
     .header .menu{
         background: yellowgreen;
         position: fixed;
@@ -114,8 +140,11 @@ body{
         position: initial; 
     }
 }
-/* @media screen and (max-width: 1024px) { 
-    body{
-        background: red;
-    }
-} */
+@media screen and (max-width: 1024px) { 
+    .header .logo p{
+        font-size: 20px;;
+     }
+     .header ul li{
+        padding: 0;
+     }
+}

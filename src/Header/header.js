@@ -28,7 +28,7 @@ class Header extends Component {
 
     render() {
         return (
-            <div className="header">
+            <div className="header" >
                 <div className="button-menu" onClick={this.handleClick}>
                     <FontAwesome
                         className='button-menu-icon'

@@ -4,3 +4,6 @@
 2.Fuentes y contenido extra ponerlo detras del archivo css.
 3.Convertir mi archivo css a Critical CSS y poner un style dentro de la etiqueta head y colocar
     el codigo convertido
+4. Optimizar imagenes con estas herramientas
+    4.1 -> ResizeImage 
+    4.2 -> Tiny PNG

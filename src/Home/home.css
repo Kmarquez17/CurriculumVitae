@@ -1,40 +1,82 @@
-.home-container{
+.home-container .content{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.home-logo{
+    width: 580px;
+    height: 300px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: justify;
-    background-image: url('../../images/fondoHome.png');
-    background-size:cover; 
-    padding: 30px;
 }
-
-.home-container .home-logo figure{
-    margin: 10px 0;
-    padding: 0;
-}
-.home-container .home-logo figure img{
-    width: 220px;
-    height: 220px;
-    border-radius:50%; 
-}
-.home-container .home-name p,h1{
+.home-logo figure{
     margin: 0;
-    color: white;
 }
 
-.home-container .home-redes ul{
-    margin: 10px 0 10px 0;
-    padding: 0;
-    list-style: none;
+.home-logo figure img{
+    border-radius: 50%;
+}
+
+.home-information{
+    width: 580px;
+    height: 300px;
+}
+.home-information h1,p {
+    margin: 0;
+    text-align: center;
+}
+.home-information .information{
+    line-height: 35px;
+}
+.information .information-dat{
     display: flex;
 }
-
-.home-container .home-redes{
-    margin: 0 20px;
-    color:white;
+.information .information-dat strong{
+    margin-right: 15px; 
 }
 
-.home-container .home-redes span{
-    padding: 10px;
+.home-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: yellowgreen;
+    height: 80px;
+}
+.home-redes .home-redes-icon{
+    padding: 0 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .home-container .content{
+        display: block;
+    }
+    .home-information .information{
+        line-height: 25px;
+    }
+    .home-logo,.home-information{
+        width: initial;
+        height: initial;
+        font-size: 14px;
+    }
+    .home-logo figure img{
+        width: 180px;
+        height: 180px;
+    }
+    .information .information-dat{
+        flex-direction: column;
+    }
+    .information .information-dat span{
+        margin-left: 10px; 
+    }    
+ }
+@media screen and (max-width: 767px) { 
+    
+}
+@media screen and (max-width: 1024px) { 
+    .home-logo,.home-information{
+        font-size: 14px;
+    }
 }

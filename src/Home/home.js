@@ -5,6 +5,16 @@ import FontAwesome from 'react-fontawesome'
 
 import './home.css'
 class Home extends Component {
+    renderUsersList() {
+        return this.props.datos.datosPersonales.map((personal) => {
+          return (
+            <div className="information-dat" key={personal.id} >
+                <strong>{personal.name}</strong>
+                <span>{personal.value}</span>
+            </div>
+          )
+        })
+      }
 
     render() {
         return (
@@ -14,32 +24,19 @@ class Home extends Component {
                         <figure>
                             <img src={logo} alt="FotoPerfil" />
                         </figure>
+                        <p>
+                            Obtener un puesto en la empresa y consolidarme, para contribuir con mi experiencia en prácticas y 
+                            habilidad en el logro de las metas generales de la empresa y las responsabilidades a mi cargo, 
+                            con la oportunidad de continuar desarrollándome para el buen desempeño de las funciones asignadas
+                        </p>                        
                     </div>
                     <div className="home-information">
+                        <hr />
                         <h1>Kevin Márquez</h1>
                         <p>Ingeniero en Computación</p>
                         <hr />
                         <div className="information">
-                            <div className="information-dat">
-                                <strong>Edad</strong>
-                                <span>21</span>
-                            </div>
-                            <div className="information-dat">
-                                <strong>Sexo</strong>
-                                <span>Masculino</span>
-                            </div>
-                            <div className="information-dat">
-                                <strong>Dirección</strong>
-                                <span>Del conchita palacios 7 cuadra al sur 1/2 al este</span>
-                            </div>
-                            <div className="information-dat">
-                                <strong>Email</strong>
-                                <span>marquezkrodriguez24@gmail.com</span>
-                            </div>
-                            <div className="information-dat">
-                                <strong>Celular</strong>
-                                <span>77653737</span>
-                            </div>     
+                        { this.renderUsersList() }
                         </div>
                     </div>
                 </div>

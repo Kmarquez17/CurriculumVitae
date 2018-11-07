@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import Header from './Header/header'
 import Home from './Home/home'
 import { Element } from 'react-scroll'
+import DatosPersonales from '../utils/datosPersonales'
 class App extends Component {
-
-  render() {
+  render() {    
     return (
       <div>
         <Header/>
         <div className="container">
-          <Home/>
+          <Home datos={DatosPersonales}/>
         </div>
           
         

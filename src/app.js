@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import Header from './Header/header'
 import Home from './Home/home'
+import Education from './Education/education'
+
 import { Element } from 'react-scroll'
 import DatosPersonales from '../utils/datosPersonales'
+import DatosMenu from '../utils/datosMenu.json'
 class App extends Component {
-  render() {    
+  render() {
     return (
       <div>
-        <Header/>
-        <div className="container">
-          <Home datos={DatosPersonales}/>
-        </div>
-          
-        
-        <Element name="about" className="container">
+        <Header datos={DatosMenu} />
+        <Home datos={DatosPersonales} />
+        <Education />
+
+        <Element  className="container">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and

@@ -1,0 +1,28 @@
+{
+    "datosMenu": [
+        {
+            "id": 1,
+            "to": "home",
+            "name": "Inicio",
+            "icon_name":"home"
+        },
+        {
+            "id": 2,
+            "to": "education",
+            "name": "Educación",
+            "icon_name":"graduation-cap"
+        },
+        {
+            "id": 3,
+            "to": "experience",
+            "name": "Experiencia",
+            "icon_name":"facebook-square"
+        },
+        {
+            "id": 4,
+            "to": "contact",
+            "name": "Contacto",
+            "icon_name":"envelope"
+        }
+    ]
+}

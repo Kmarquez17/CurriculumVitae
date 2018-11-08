@@ -12,17 +12,34 @@ class Header extends Component {
             name_icon: 'bars',
         }
     }
-    
+
+
+    renderMenu() {
+        return this.props.datos.datosMenu.map((menu) => {
+            return (
+                <li key={menu.id}>
+                    <Link onClick={this.handleClick} activeClass="active" to={menu.to} spy={true} smooth={true} duration={600}>
+                        <FontAwesome className='header-icon' name={menu.icon_name} />
+                        {menu.name}
+                    </Link>
+                </li>
+            )
+        })
+    }
+
     handleClick = () => {
-        console.log("Hola Kevin")
-        // this.setState({active:false})
-        const menu = document.querySelector('.menu')
-        if (menu.classList.contains('is-active')) {
-            menu.classList.remove('is-active')
-            this.setState({ name_icon: 'bars' })
-        } else {
-            menu.classList.add('is-active')
-            this.setState({ name_icon: 'times' })
+        //Hacemos que este evento se active en la resolucion de celular
+        if (window.matchMedia("(max-width: 480px)").matches) {
+            console.log("Hola Kevin")
+            // this.setState({active:false})
+            const menu = document.querySelector('.menu')
+            if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active')
+                this.setState({ name_icon: 'bars' })
+            } else {
+                menu.classList.add('is-active')
+                this.setState({ name_icon: 'times' })
+            }
         }
     }
 
@@ -41,39 +58,7 @@ class Header extends Component {
                 </div>
                 <nav className="menu">
                     <ul>
-                        <li>
-                            <Link onClick={this.handleClick} activeClass="active" to="home" spy={true} smooth={true} duration={600}>
-                                <FontAwesome className='header-icon' name='home' />
-                                Inicio
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link onClick={this.handleClick} activeClass="active" to="about" spy={true} smooth={true} duration={500}>
-                                <FontAwesome className='header-icon' name='facebook-square' />
-                                Sobre Mi
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link onClick={this.handleClick} activeClass="active" to="education" spy={true} smooth={true} duration={500}>
-                                <FontAwesome className='header-icon' name='graduation-cap' />
-                                Educación
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link onClick={this.handleClick} activeClass="active" to="experience" spy={true} smooth={true} duration={500} >
-                                <FontAwesome className='header-icon' name='facebook-square' />
-                                Experiencia
-                            </Link>
-                        </li>
-                        <li>
-                            <Link onClick={this.handleClick} activeClass="active" to="contact" spy={true} smooth={true} duration={500} >
-                                <FontAwesome className='header-icon' name='envelope' />
-                                Contacto
-                            </Link>
-                        </li>
+                        {this.renderMenu()}
                     </ul>
                 </nav>
             </div>

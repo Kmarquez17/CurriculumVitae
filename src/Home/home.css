@@ -40,7 +40,10 @@
     display: flex;
 }
 .information .information-dat strong{
-    margin-right: 15px; 
+    margin-right: 10px; 
+}
+.information .information-dat strong::after{
+    content: " :";
 }
 
 .home-redes{
@@ -48,11 +51,16 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: yellowgreen;
+    background: #233142;
     height: 80px;
 }
 .home-redes .home-redes-icon{
     padding: 0 15px;
+    color:#e3e3e3;
+}
+
+.home-redes .home-redes-icon:hover{
+    color:#f95959;
 }
 
 @media screen and (max-width: 480px) {

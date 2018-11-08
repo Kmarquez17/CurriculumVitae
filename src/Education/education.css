@@ -1,0 +1,15 @@
+.education{
+    display: flex;
+    justify-content: space-evenly;
+    width: 940px;
+    box-shadow: 0.5px 1px 1px rgba(69, 93, 122, 0.7);    
+    margin: 10px auto;
+    
+}
+.education .education-left{
+    width: 470px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

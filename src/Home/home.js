@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import logo from '../../images/fotoPerfil.png'
-import fondo from '../../images/fondoHome.png'
+// import fondo from '../../images/fondoHome.png'
 import FontAwesome from 'react-fontawesome'
 
 import './home.css'
 class Home extends Component {
-    renderUsersList() {
+    renderDatosPersonales() {
         return this.props.datos.datosPersonales.map((personal) => {
           return (
             <div className="information-dat" key={personal.id} >
@@ -18,7 +18,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="home-container" name="home">
+            <div className="home-container container" name="home">
                 <div className="content">
                     <div className="home-logo">
                         <figure>
@@ -36,7 +36,7 @@ class Home extends Component {
                         <p>Ingeniero en Computación</p>
                         <hr />
                         <div className="information">
-                        { this.renderUsersList() }
+                        { this.renderDatosPersonales() }
                         </div>
                     </div>
                 </div>

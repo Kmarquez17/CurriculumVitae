@@ -1,37 +1,37 @@
 {
     "datosPersonales": [
         {
-            "id":1,
+            "id":"1",
             "name": "Edad",
             "value": "21"
         },
         {
-            "id":2,
+            "id":"2",
             "name": "Sexo",
             "value": "Masculino"
         },
         {
-            "id":3,
+            "id":"3",
             "name": "Dirección",
             "value": "Del conchita palacios 7 cuadra al sur 1/2 al este"
         },
         {
-            "id":4,
+            "id":"4",
             "name": "Email",
             "value": "marquezkrodriguez24@gmail.com"
         },
         {
-            "id":5,
+            "id":"5",
             "name": "Celular",
             "value": "77653737"
         },
         {
-            "id":6,
+            "id":"6",
             "name": "Estado Civil",
             "value": "Soltero"
         },
         {
-            "id":7,
+            "id":"7",
             "name": "Numero de Cédula",
             "value": "001-010797-0028T"
         }

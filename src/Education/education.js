@@ -1,47 +1,39 @@
 import React, { Component } from 'react'
 import './education.css'
 class Education extends Component {
+
+    componentWillMount() {
+        console.log(this.props.datos.datosEducacion[0].name)
+    }
+    renderEducation() {
+        return this.props.datos.datosEducacion.map((edu) => {
+            return (
+                <div className="education" key={edu.id}>
+                    <div className="education-left">
+                        <h4>{edu.name}</h4>
+                        {/* <p>{menu.ciclo[0].centro}</p> */}
+                    </div>
+                    <div className="education-right">
+                        <ul>
+                            {
+                                edu.ciclo.map((i) => {
+                                    return (
+                                        <li key={i.id}><strong>{i.anio}</strong> {i.centro}</li>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </div>
+                </div >
+            )
+        })
+    }
     render() {
         return (
-            <div className="container">
-                <div className="education " name="education">
-                    <div className="education-left">
-                        <h2>Estudios primarios</h2>
-                    </div>
-                    <div className="education-right">
-                        <ul>
-                            <li><strong>2014-2018</strong> Instituto Azul y Blanco, Managua</li>
-                            <li><strong>2014-2018</strong> Instituto Republica de Canadá, Managua</li>
-                            <li><strong>2014-2018</strong> Instituto Azul y Blanco, Managua</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className="education " name="education">
-                    <div className="education-left">
-                        <h2>Estudios primarios</h2>
-                    </div>
-                    <div className="education-right">
-                        <ul>
-                            <li><strong>2014-2018</strong> Instituto Azul y Blanco, Managua</li>
-                            <li><strong>2014-2018</strong> Instituto Republica de Canadá, Managua</li>
-                            <li><strong>2014-2018</strong> Instituto Azul y Blanco, Managua</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className="education " name="education">
-                    <div className="education-left">
-                        <h2>Estudios primarios</h2>
-                    </div>
-                    <div className="education-right">
-                        <ul>
-                            <li><strong>2014-2018</strong> Instituto Azul y Blanco, Managua</li>
-                            <li><strong>2014-2018</strong> Instituto Republica de Canadá, Managua</li>
-                            <li><strong>2014-2018</strong> Instituto Azul y Blanco, Managua</li>
-                        </ul>
-                    </div>
-                </div>
+            <div name="education" className="container">
+                <h1>FORMACIÓN ACADÉMICA</h1>
+                {this.renderEducation()}
+                
             </div>
         );
     }

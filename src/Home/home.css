@@ -1,4 +1,4 @@
-.home-container .content{
+.home{
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -13,7 +13,7 @@
 }
 .home-logo p {
     text-align: justify;
-    margin-top: 5px; 
+    margin: 5px 10px 0 0;
 }
 .home-logo figure{
     margin: 0;
@@ -42,9 +42,6 @@
 .information .information-dat strong{
     margin-right: 10px; 
 }
-.information .information-dat strong::after{
-    content: " :";
-}
 
 .home-redes{
     display: flex;
@@ -64,7 +61,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .home-container .content{
+    .home{
         display: block;
     }
     .home-information{
@@ -91,10 +88,12 @@
     }    
  }
 @media screen and (max-width: 767px) { 
-    
 }
 @media screen and (max-width: 1024px) { 
     .home-logo,.home-information{
         font-size: 14px;
+    }
+    .home-information .information{
+        line-height: 30px;
     }
 }

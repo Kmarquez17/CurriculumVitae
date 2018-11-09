@@ -18,8 +18,9 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="home-container container" name="home">
-                <div className="content">
+            <div name="home" className="container">
+                 <h1>DATOS DE INTERÉS </h1>
+                <div className="home">
                     <div className="home-logo">
                         <figure>
                             <img src={logo} alt="FotoPerfil" />

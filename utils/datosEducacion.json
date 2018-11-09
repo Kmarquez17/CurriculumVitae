@@ -1,0 +1,48 @@
+{
+    "datosEducacion": [
+        {
+            "id":"1",
+            "name":"Primaria",
+            "ciclo": [
+                {
+                    "id":"1",
+                    "anio":"2003-2006",
+                    "centro":"Instituto Azul y Blanco, Managua"
+                },
+                {
+                    "id":"2",
+                    "anio":"2007",
+                    "centro":" Instituto Republica de Canadá, Managua"
+                },
+                {
+                    "id":"3",
+                    "anio":"2008",
+                    "centro":"Instituto Azul y Blanco, Managua"                
+                }
+
+            ]
+        },
+        {
+            "id":"2",
+            "name":"Secundaria",
+            "ciclo": [
+                {
+                    "id":"1",
+                    "anio":"2009-2013",
+                    "centro":"Instituto Douglas Sequeira, Managua"                
+                }
+            ]
+        },
+        {
+            "id":"3",
+            "name":"Universitaria",
+            "ciclo": [
+                {
+                    "id":"1",
+                    "anio":"2014-Actualmente",
+                    "centro":"Universidad Politécnica de Nicaragua"                
+                }
+            ]
+        }
+    ]
+}

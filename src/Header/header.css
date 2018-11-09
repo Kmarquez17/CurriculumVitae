@@ -73,6 +73,10 @@ body{
     margin: 10px auto;
     box-shadow: 0.5px 1px 1px rgba(69, 93, 122, 0.7);    
 }
+.container h1{
+    text-align: center;
+    margin: 0;
+}
 
 @media screen and (max-width: 480px) {
     /* body{

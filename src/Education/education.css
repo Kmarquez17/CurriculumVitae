@@ -21,12 +21,12 @@
 
 @media screen and (max-width: 480px) {
     .education{
-        display: initial;
+        flex-direction: column
     }
  }
-@media screen and (max-width: 767px) { 
+/* @media screen and (max-width: 767px) { 
     
-}
+} */
 @media screen and (max-width: 1023px) { 
     .education .education-left{
         height: auto;

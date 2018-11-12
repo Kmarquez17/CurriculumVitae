@@ -1,0 +1,91 @@
+{
+    "datosHabilidades": [
+        {
+            "id": "1",
+            "name_skills": "Personal",
+            "skills": [
+                {
+                    "id": "1",
+                    "width": "65",
+                    "name": "Comunicación"
+                },
+                {
+                    "id": "2",
+                    "width": "85",
+                    "name": "Trabajo en Equipo"
+                },
+                {
+                    "id": "3",
+                    "width": "70",
+                    "name": "Creatividad"
+                },
+                {
+                    "id": "4",
+                    "width": "90",
+                    "name": "Dedicación"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name_skills": "Profesional",
+            "skills": [
+                {
+                    "id": "1",
+                    "width": "85",
+                    "name": "Html"
+                },
+                {
+                    "id": "2",
+                    "width": "70",
+                    "name": "Css"
+                },
+                {
+                    "id": "3",
+                    "width": "70",
+                    "name": "Bootstrap"
+                },
+                {
+                    "id": "4",
+                    "width": "70",
+                    "name": "JavaScript"
+                },
+                {
+                    "id": "5",
+                    "width": "65",
+                    "name": "ReactJS"
+                },
+                {
+                    "id": "6",
+                    "width": "80",
+                    "name": "C"
+                },
+                {
+                    "id": "7",
+                    "width": "85",
+                    "name": "Java"
+                },
+                {
+                    "id": "8",
+                    "width": "60",
+                    "name": "C#"
+                },
+                {
+                    "id": "9",
+                    "width": "90",
+                    "name": "PowerBuilder"
+                },
+                {
+                    "id": "10",
+                    "width": "90",
+                    "name": "Oracle"
+                },
+                {
+                    "id": "11",
+                    "width": "65",
+                    "name": "SqlServer"
+                }
+            ]
+        }
+    ]
+}

@@ -8,6 +8,7 @@ import { Element } from 'react-scroll'
 import DatosPersonales from '../utils/datosPersonales.json'
 import DatosMenu from '../utils/datosMenu.json'
 import DatosEducacion from '../utils/datosEducacion.json'
+import DatosHabilidades from '../utils/datosHabilidades.json'
 
 
 // var scroll = new SmoothScroll();
@@ -21,7 +22,7 @@ class App extends Component {
         <Header datos={DatosMenu} />
         <Home datos={DatosPersonales} />
         <Education datos={DatosEducacion}/>
-        <Skills />
+        <Skills datos={DatosHabilidades}/>
         
         <Element name="contact">
           <p>

@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import './education.css'
 class Education extends Component {
 
-    componentWillMount() {
-        console.log(this.props.datos.datosEducacion[0].name)
-    }
+    // componentWillMount() {
+    //     console.log(this.props.datos.datosEducacion[0].name)
+    // }
     renderEducation() {
         return this.props.datos.datosEducacion.map((edu) => {
             return (
@@ -31,9 +31,9 @@ class Education extends Component {
     render() {
         return (
             <div name="education" className="container">
-                <h1>FORMACIÓN ACADÉMICA</h1>
+                <h1>Formación Académica</h1>
                 {this.renderEducation()}
-                
+
             </div>
         );
     }

@@ -1,23 +1,32 @@
 .education{
-    display: flex;
-    box-shadow: 0.5px 1px 1px rgba(69, 93, 122, 0.7);    
+    display: flex;  
     margin: 10px auto;
+    padding: 10px;
 }
 
 .education .education-left{
     width: 100%;
     height: 100px;
     background: #233142;
-    color:#e3e3e3;
+    color: #e3e3e3;
+    border-top: 5px solid #f95959;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px; 
+    box-shadow: 1.5px 1.5px 1.5px rgba(69, 93, 122, 0.7),
+                -1.5px 1.5px 1.5px rgba(69, 93, 122, 0.7);
 }
+
 .education .education-right{
     width: 100%;
     display: flex;
     align-items: center;
+    box-shadow: 0.5px 1px 1px rgba(69, 93, 122, 0.7);
 }
+
+
+
 
 @media screen and (max-width: 480px) {
     .education{

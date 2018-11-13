@@ -1,7 +1,7 @@
 .skills{
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
+    padding: 10px;
 }
 .skills h4{
     text-align: center;
@@ -13,12 +13,13 @@
 .skills .skills-value{
     display: flex;
     justify-content: space-between;
+    padding: 0 10px;
 }
 
 .skills .progress{
     height: 10px;
     background: #f95959;
-    border-radius: 10%;
+    border-radius: 5px;
 }
 
 .skills-Personal,.skills-Profesional{

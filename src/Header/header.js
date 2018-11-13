@@ -29,7 +29,7 @@ class Header extends Component {
 
     handleClick = () => {
         //Hacemos que este evento se active en la resolucion de celular
-        if (window.matchMedia("(max-width: 480px)").matches) {
+        if (window.matchMedia("(max-width: 767px)").matches) {
             console.log("Hola Kevin")
             // this.setState({active:false})
             const menu = document.querySelector('.menu')

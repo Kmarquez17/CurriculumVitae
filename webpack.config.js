@@ -45,7 +45,7 @@ const webpackInitConfig = {
       },
       
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|jpg|gif|ico)$/,
         use: [
           {
             loader: 'url-loader',
@@ -65,6 +65,7 @@ const webpackInitConfig = {
     new HTMLWebpackPlugin({
       filename: indexOutput,
       template: indextInput,
+      favicon: './images/cv.ico',
     }),
     new MiniCSSExtract({
       filename: 'css/[name].css',

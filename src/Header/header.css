@@ -73,14 +73,30 @@ body{
     max-width: 960px;
     margin: 10px auto;
     box-shadow: 0.5px 1px 1px rgba(69, 93, 122, 0.7);  
-    background: white;  
+    background: white;
+    animation-name: visible;
 }
 .container h1{
     text-align: center;
     margin: 0;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
-@media screen and (max-width: 480px) {
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+@media screen and (max-width: 767px) {
     /* body{
         overflow-y: hidden;
      } */
@@ -121,8 +137,6 @@ body{
         align-items: center;
         transition: .5s;
     }
-
-    
     .header .menu ul li{
         display: block;
         text-align: center;
@@ -131,15 +145,16 @@ body{
     .header .is-active{
         left: 0;
     }
+
+    .container h1{
+        font-size: 25px
+    }
  }
-@media screen and (max-width: 767px) { 
-    body{
-        padding: 0;
+/* @media screen and (max-width: 480px) { 
+    .container h1{
+        font-size: 20px
     }
-    .header{
-        position: initial; 
-    }
-}
+} */
 @media screen and (max-width: 1024px) { 
     .header .logo p{
         font-size: 20px;;
